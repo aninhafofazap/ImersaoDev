@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('https://w.wallhaven.cc/full/8x/wallhaven-8xy9pk.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 2em 1em;
+}
+
+.cabecalho-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
+    font-size: 18px;
+    margin: 0 2em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background: #000000; */
+    box-shadow: 7px 7px 15px rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 36px 64px;
+}
+
+.title {
+    color: #FFFFFF;
+    margin: 0 0 5px;
+}
+
+p {
+    padding: 2rem;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+.conversor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 7px 7px 15px rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 36px 64px;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+input {
+    margin: 2rem 1rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+label {
+    color: #FFFFFF;
+}
+
+button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.botao {
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2em 1em;
+    color: #000000;
+}
+
+#valorConvertido {
+    color: #FFFFFF;
+}
